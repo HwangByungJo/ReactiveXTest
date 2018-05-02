@@ -12,9 +12,13 @@
 		385A3F6D2099934B00E21AFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385A3F6B2099934B00E21AFB /* Main.storyboard */; };
 		385A3F6F2099934D00E21AFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 385A3F6E2099934D00E21AFB /* Assets.xcassets */; };
 		385A3F722099934D00E21AFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385A3F702099934D00E21AFB /* LaunchScreen.storyboard */; };
+		7E3C0FA5A3C398E55F846EFD /* Pods_ReactiveXTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A8C701F058883FD8747F579 /* Pods_ReactiveXTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06D4115C4E79FFF3FB27A75C /* Pods-ReactiveXTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveXTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveXTest/Pods-ReactiveXTest.debug.xcconfig"; sourceTree = "<group>"; };
+		18067E1E806350DFC8553957 /* Pods-ReactiveXTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveXTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveXTest/Pods-ReactiveXTest.release.xcconfig"; sourceTree = "<group>"; };
+		2A8C701F058883FD8747F579 /* Pods_ReactiveXTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveXTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		385A3F642099934B00E21AFB /* ReactiveXTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveXTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		385A3F672099934B00E21AFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		385A3F692099934B00E21AFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E3C0FA5A3C398E55F846EFD /* Pods_ReactiveXTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23BF430F9A2F67A676A3F479 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06D4115C4E79FFF3FB27A75C /* Pods-ReactiveXTest.debug.xcconfig */,
+				18067E1E806350DFC8553957 /* Pods-ReactiveXTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		35E47C36BE2F63504119E5EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A8C701F058883FD8747F579 /* Pods_ReactiveXTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		385A3F5B2099934B00E21AFB = {
 			isa = PBXGroup;
 			children = (
 				385A3F662099934B00E21AFB /* ReactiveXTest */,
 				385A3F652099934B00E21AFB /* Products */,
+				23BF430F9A2F67A676A3F479 /* Pods */,
+				35E47C36BE2F63504119E5EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 385A3F762099934D00E21AFB /* Build configuration list for PBXNativeTarget "ReactiveXTest" */;
 			buildPhases = (
+				7FFDF0FE34571DCACD415E62 /* [CP] Check Pods Manifest.lock */,
 				385A3F602099934B00E21AFB /* Sources */,
 				385A3F612099934B00E21AFB /* Frameworks */,
 				385A3F622099934B00E21AFB /* Resources */,
+				573BE852FBFE4B0722DBFE7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		573BE852FBFE4B0722DBFE7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveXTest/Pods-ReactiveXTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveXTest/Pods-ReactiveXTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FFDF0FE34571DCACD415E62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactiveXTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		385A3F602099934B00E21AFB /* Sources */ = {
@@ -278,15 +345,13 @@
 		};
 		385A3F772099934D00E21AFB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06D4115C4E79FFF3FB27A75C /* Pods-ReactiveXTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4LZ7NQJRBF;
 				INFOPLIST_FILE = ReactiveXTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iDeveloper.ReactiveXTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +361,13 @@
 		};
 		385A3F782099934D00E21AFB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18067E1E806350DFC8553957 /* Pods-ReactiveXTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4LZ7NQJRBF;
 				INFOPLIST_FILE = ReactiveXTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iDeveloper.ReactiveXTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
