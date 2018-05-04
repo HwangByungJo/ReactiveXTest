@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3819A016209C544300C57C2E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3819A015209C544300C57C2E /* LoginViewController.swift */; };
+		3819A018209C568400C57C2E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3819A017209C568400C57C2E /* LoginViewModel.swift */; };
 		385A3F682099934B00E21AFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A3F672099934B00E21AFB /* AppDelegate.swift */; };
 		385A3F6A2099934B00E21AFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 385A3F692099934B00E21AFB /* ViewController.swift */; };
 		385A3F6D2099934B00E21AFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 385A3F6B2099934B00E21AFB /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 		06D4115C4E79FFF3FB27A75C /* Pods-ReactiveXTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveXTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveXTest/Pods-ReactiveXTest.debug.xcconfig"; sourceTree = "<group>"; };
 		18067E1E806350DFC8553957 /* Pods-ReactiveXTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveXTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveXTest/Pods-ReactiveXTest.release.xcconfig"; sourceTree = "<group>"; };
 		2A8C701F058883FD8747F579 /* Pods_ReactiveXTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveXTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3819A015209C544300C57C2E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3819A017209C568400C57C2E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		385A3F642099934B00E21AFB /* ReactiveXTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveXTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		385A3F672099934B00E21AFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		385A3F692099934B00E21AFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 			children = (
 				385A3F672099934B00E21AFB /* AppDelegate.swift */,
 				385A3F692099934B00E21AFB /* ViewController.swift */,
+				3819A015209C544300C57C2E /* LoginViewController.swift */,
+				3819A017209C568400C57C2E /* LoginViewModel.swift */,
 				385A3F6B2099934B00E21AFB /* Main.storyboard */,
 				385A3F6E2099934D00E21AFB /* Assets.xcassets */,
 				385A3F702099934D00E21AFB /* LaunchScreen.storyboard */,
@@ -202,6 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3819A018209C568400C57C2E /* LoginViewModel.swift in Sources */,
+				3819A016209C544300C57C2E /* LoginViewController.swift in Sources */,
 				385A3F6A2099934B00E21AFB /* ViewController.swift in Sources */,
 				385A3F682099934B00E21AFB /* AppDelegate.swift in Sources */,
 			);
@@ -351,7 +359,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4LZ7NQJRBF;
 				INFOPLIST_FILE = ReactiveXTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iDeveloper.ReactiveXTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -367,7 +378,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4LZ7NQJRBF;
 				INFOPLIST_FILE = ReactiveXTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tistory.iDeveloper.ReactiveXTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
